@@ -1,6 +1,6 @@
 .Categories{
     height: fit-content;
-    padding: 2rem 3rem 4rem 3rem;
+    padding: 0rem 3rem 0rem 3rem;
 }
 
 
@@ -11,11 +11,22 @@
 
 .h2_categories {
     padding: 10px 0px;
+    font-size: 25px;
 } 
 
-.cat_img { 
-    object-fit: cover;
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 50%;
+.container-categories p{
+    font-size: 14px;
+    width: 90%;
+}
+
+.filtro_ordenar{
+    width: 30%;
+    
+    height: 100px;
+}
+
+.btn_filter{
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #000;
 }

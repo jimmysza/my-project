@@ -1,70 +1,137 @@
 ---
 import "../styles/categories.css";
+const props = Astro.props;
 ---
 
 <section class="Categories flex w-full h-fit flex-col">
     <h2 class="h2_categories">Categories</h2>
-    <div class="container-categories flex justify-center gap-10">
-        <a href="">
-            <div class="links flex flex-col justify-center items-center gap-2">
-                <img
-                    class="w-[100px] h-[100px] rounded-full object-cover"
-                    src="../../public/images/categorias/iconic.webp"
-                    alt="Categoria Iconicos"
-                />
-                <p>Icónicos</p>
+    <div class="flex">
+        <div class="container-categories flex justify-start gap-8">
+            <a href="">
+                <div
+                    class="links flex flex-col justify-center items-center gap-2 text-center"
+                >
+                    <img
+                        class="w-[70px] h-[70px] rounded-full object-cover"
+                        src="../../public/images/categorias/iconic.webp"
+                        alt="Categoria Iconicos"
+                    />
+                    <p>Icónicos</p>
+                </div>
+            </a>
+            <a href="">
+                <div
+                    class="links flex flex-col justify-center items-center gap-2 text-center"
+                >
+                    <img
+                        class="w-[70px] h-[70px] rounded-full object-cover"
+                        src="../../public/images/categorias/acuatico.webp"
+                        alt="Categoria Acuáticos"
+                    />
+                    <p>Acuáticos</p>
+                </div>
+            </a>
+            <a href="">
+                <div
+                    class="links flex flex-col justify-center items-center gap-2 text-center"
+                >
+                    <img
+                        class="w-[70px] h-[70px] rounded-full object-cover"
+                        src="../../public/images/categorias/foodie.webp"
+                        alt="Foodies"
+                    />
+                    <p>Foodies</p>
+                </div>
+            </a>
+            <a href="">
+                <div
+                    class="links flex flex-col justify-center items-center gap-2 text-center"
+                >
+                    <img
+                        class="w-[70px] h-[70px] rounded-full object-cover"
+                        src="../../public/images/categorias/islas.webp"
+                        alt="Islas"
+                    />
+                    <p>Islas</p>
+                </div>
+            </a>
+            <a href="">
+                <div
+                    class="links flex flex-col justify-center items-center gap-2 text-center"
+                >
+                    <img
+                        class="w-[70px] h-[70px] rounded-full object-cover"
+                        src="../../public/images/categorias/entre.webp"
+                        alt="Entretenimiento"
+                    />
+                    <p>Cine</p>
+                </div>
+            </a>
+            <a href="">
+                <div
+                    class="links flex flex-col justify-center items-center gap-2 text-center"
+                >
+                    <img
+                        class="w-[70px] h-[70px] rounded-full object-cover"
+                        src="../../public/images/categorias/arte.webp"
+                        alt="Arte"
+                    />
+                    <p>Arte</p>
+                </div>
+            </a>
+            <a href="">
+                <div
+                    class="links flex flex-col justify-center items-center gap-2 text-center"
+                >
+                    <img
+                        class="w-[70px] h-[70px] rounded-full object-cover"
+                        src="../../public/images/categorias/deporte.webp"
+                        alt="Deporte"
+                    />
+                    <p>Deporte</p>
+                </div>
+            </a>
+            <a href="">
+                <div
+                    class="links flex flex-col justify-center items-center gap-2 text-center"
+                >
+                    <img
+                        class="w-[70px] h-[70px] rounded-full object-cover"
+                        src="../../public/images/categorias/historia.webp"
+                        alt="Historia"
+                    />
+                    <p>Historia</p>
+                </div>
+            </a>
+            <a href="">
+                <div
+                    class="links flex flex-col justify-center items-center gap-2 text-center"
+                >
+                    <img
+                        class="w-[70px] h-[70px] rounded-full object-cover"
+                        src="../../public/images/categorias/playas.webp"
+                        alt="Playas"
+                    />
+                    <p>Playas</p>
+                </div>
+            </a>
+        </div>
+        <div class="filtro_ordenar flex justify-center items-center">
+            <div class="btn_filter flex justify-center items-center gap-2">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    {...props}
+                >
+                    <path
+                        fill="currentColor"
+                        d="M9 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2M6.17 5a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-7.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 0 1 0-2zM15 11a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-2.83 0a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-1.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 1 1 0-2zM9 17a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-2.83 0a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-7.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 1 1 0-2z"
+                    ></path>
+                </svg>
+                <p>Filtro & Ordenar</p>
             </div>
-        </a>
-        <a href="">
-            <div class="links flex flex-col justify-center items-center gap-2">
-                <img class="w-[100px] h-[100px] rounded-full object-cover" src="../../public/images/categorias/acuatico.webp" alt="Categoria Acuáticos" />
-                <p>Acuáticos</p>
-            </div>
-        </a>
-        <a href="">
-            <div class="links flex flex-col justify-center items-center gap-2">
-                <img class="w-[100px] h-[100px] rounded-full object-cover" src="../../public/images/categorias/foodie.webp" alt="Foodies" />
-                <p>Foodies</p>
-            </div>
-        </a>
-        <a href="">
-            <div class="links flex flex-col justify-center items-center gap-2">
-                <img class="w-[100px] h-[100px] rounded-full object-cover" src="../../public/images/categorias/islas.webp" alt="Islas" />
-                <p>Islas</p>
-            </div>
-        </a>
-        <a href="">
-            <div class="links flex flex-col justify-center items-center gap-2">
-                <img class="w-[100px] h-[100px] rounded-full object-cover" src="../../public/images/categorias/entre.webp" alt="Entretenimiento" />
-                <p>Entretenimiento</p>
-            </div>
-        </a>
-        <a href="">
-            <div class="links flex flex-col justify-center items-center gap-2">
-                <img class="w-[100px] h-[100px] rounded-full object-cover" src="../../public/images/categorias/arte.webp" alt="Arte" />
-                <p>Arte</p>
-            </div>
-        </a>
-        <a href="">
-            <div class="links flex flex-col justify-center items-center gap-2">
-                <img class="w-[100px] h-[100px] rounded-full object-cover" src="../../public/images/categorias/deporte.webp" alt="Deporte" />
-                <p>Deporte</p>
-            </div>
-        </a>
-        <a href="">
-            <div class="links flex flex-col justify-center items-center gap-2">
-                <img class="w-[100px] h-[100px] rounded-full object-cover" src="../../public/images/categorias/historia.webp" alt="Historia" />
-                <p>Historia</p>
-            </div>
-        </a>
-        <a href="">
-            <div class="links flex flex-col justify-center items-center gap-2">
-                <img class="w-[100px] h-[100px] rounded-full object-cover" src="../../public/images/categorias/playas.webp" alt="Playas" />
-                <p>Playas</p>
-            </div>
-        </a>    
-    </div>
-    <div class="flex justify-end ver_mas" >
-        <a href="">ver mas</a>
+        </div>
     </div>
 </section>
