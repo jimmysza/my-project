@@ -53,8 +53,9 @@ const props = Astro.props;
 
 <style>
     .turism{
+        max-width: 1300px;
+        margin: 0 auto;
         text-align: center;
-        margin: 40px 0px;
         margin-bottom: 80px;
     }
 
@@ -64,10 +65,17 @@ const props = Astro.props;
     }
 
     .container_turism{
-        display: grid;
+        display: flex;
+        justify-content: center;
+        gap: 400px;
         justify-items: center;
-        grid-template-columns: 1fr 1fr;
+        flex-wrap: ;
         padding: 70px 10px 0px 10px;
+    }
+    @media (max-width: 1050px){
+        .container_turism{
+            gap: 200px;
+        }
     }
 
     .turism_links{

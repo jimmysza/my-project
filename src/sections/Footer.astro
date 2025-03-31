@@ -41,20 +41,20 @@ const props = Astro.props;
             </div>
         </div>
 
-        <div class="social_footer mt-7 grid grid-cols-3">
+        <div class="social_footer mt-7  grid grid-cols-3">
             <div class="download flex flex-col items-start justify-start">
                 <p>Una aplicacion para disfruta al maximo de [city]</p>
                 <div class="flex gap-4 mt-4px">
-                    <a href=""><img src="" alt="apple"></a>
-                    <a href="andor"><img src="" alt="android"></a>
+                    <a href=""><img src="../../public/images/appstore.webp" alt="apple" class="w-[125px]  "></a>
+                    <a href="andor"><img src="../../public/images/googleplay.webp" alt="android" class="w-[130px]"></a>
                 </div>
             </div>
             <div class="sponsor flex flex-col items-start justify-start">
                 <p>Miembros de EPT</p>
                 <div class="flex gap-3.5 mt-4px">
-                    <a href=""><img src="" alt="fiscalia" /></a>
-                    <a href=""><img src="" alt="ministerio" /></a>
-                    <a href=""><img src="" alt="alcadia" /></a>
+                    <a href=""><img class="w-[130px]" src="../../public/images/fiscalia.webp" alt="fiscalia" /></a>
+                    <a href=""><img class="w-[130px]" src="../../public/images/ministerio.webp" alt="ministerio" /></a>
+                    <a href="" class="white-bg w-[130px]"><img src="../../public/images/alcadia.webp" alt="alcadia" /></a>
                 </div>
             </div>
             <div class="social_medias_links flex flex-col items-start justify-start">
@@ -133,21 +133,32 @@ const props = Astro.props;
 
 <style>
 
+    .white-bg{
+        background: #fff;
+    }
+    .social_medias_links{
+        padding-bottom: 10px;
+    }
     .copyright{
         border-top: 1px solid white;
-        margin-top: 20px;
+        width: 13510px;
+        margin: 0 auto;
         grid-template-columns: 4fr 1fr;
         padding: 10px 0px;
     }
     footer {
-        background-color: var(--color-deep-navy);
         width: 100%;
+
+        background-color: var(--color-deep-navy);
         padding: 3rem 3.5rem;
         color: var(--color-white);
     }
 
     .info-footer {
-        max-width: 1300px;
+        width: 100%;
+        max-width: 1351px;
+        margin: 0 auto;
+        overflow-x: hidden;
     }
 
     .logo-footer {
@@ -171,6 +182,7 @@ const props = Astro.props;
 
     .social_footer{
         margin-top: 30px;
+        padding-bottom: 10px;
     }
 
     .icon_social svg{

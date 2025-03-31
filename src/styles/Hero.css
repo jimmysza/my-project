@@ -1,22 +1,20 @@
-nav {
-    background-color: var(--color-sky-blue);
-}
-
 .hero {
     background-color: #f5f5f5;
     width: 100%;
-    /*Altura seccion*/
     height: 52vh;
-    margin: 0;
+    max-height: 460px;
 }
 
 nav {
     display: flex;
     padding: 15px 40px 15px 60px ;
-    background-color: transparent;
+    background-color: rgb(0,0,0,0.01);
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 134;
     width: 100%;
+    max-width: 1350px;
 }
 
 .nav-links {
@@ -41,7 +39,14 @@ nav {
 }
 
 .log-contain{
+    position: relative;
     width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6px;
 }
 
 .log-in{
@@ -65,6 +70,7 @@ nav {
     background: #d63f3f;
     width: 100%;
     height: 50vh;
+    max-height: 400px;
 }
 
 .img-container .gradient {
@@ -74,20 +80,27 @@ nav {
     width: 100%;
     z-index: 1;
     height: 50vh;
+    max-height: 400px;
     background: rgb(45,40,40);
 background: linear-gradient(180deg, rgba(45, 40, 40, 0.705) 1%, rgba(84,84,157,0.3113620448179272) 12%);
 }
 
-.img-container img {
+.fondo-img{
     width: 100%;
     height: 50vh;
-    object-fit: cover;
+    max-height: 400px;
+    background: url(../../public/images/bgmain.webp);
+    background-size: cover;
+    background-position: center 10% ; 
+    background-repeat: no-repeat;
     z-index: 0;
 }
 
 .img-container h1 {
     font-size: 50px;
     font-weight: 700 ;
+    width: 100%;
+    text-align: center;
     position: absolute;
     font-family: var(--font-poppins);
     top: 55%;
@@ -120,6 +133,7 @@ background: linear-gradient(180deg, rgba(45, 40, 40, 0.705) 1%, rgba(84,84,157,0
 }
 
 .search-container {
+    max-width: 800px;
     display: flex;
     justify-content: flex-start;
     position: absolute;
@@ -139,11 +153,29 @@ background: linear-gradient(180deg, rgba(45, 40, 40, 0.705) 1%, rgba(84,84,157,0
     margin-top: 1px;
     width: 20px;
     height: 20px;
+    
 }
 
 .search-container input {
     border: none;
     outline: none;
     width: 100%;
+    max-width: 400px;
     font-size: 16px;
+}
+
+@media screen and (max-width: 960px) {
+    
+    .img-container h1 {
+        font-size: 40px;
+    }
+
+
+}
+
+@media (max-width: 800px){
+    .img-container h1{
+        font-size: 38px;
+
+    }
 }

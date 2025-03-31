@@ -1,37 +1,65 @@
 ---
 import "../styles/hero.css";
-const props = Astro.props
+const props = Astro.props;
 ---
 
 <section class="hero">
     <nav>
         <div>
-            <img src="../../images/Logo_removebg.png" class="logo" alt="logo" loading="lazy">
+            <img
+                src="../../images/Logo_removebg.png"
+                class="logo"
+                alt="logo"
+                loading="lazy"
+            />
         </div>
         <ul class="nav-links">
-            <li><a href="#">Explorar</a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" {...props}>
-                <path fill="currentColor" fill-rule="evenodd" d="m6 7l6 6l6-6l2 2l-8 8l-8-8z" />
-            </svg></li>
+            <li>
+                <a href="#">Explorar</a><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    {...props}
+                >
+                    <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="m6 7l6 6l6-6l2 2l-8 8l-8-8z"></path>
+                </svg>
+            </li>
             <li><a href="#">Guardado</a></li>
             <li><a href="#">Asistente</a></li>
         </ul>
-        <div class="log-contain h-full flex justify-center items-center">
-            <li class="list-none"><a href="#" class="log-in">Log In</a></li>
+        <div class="log-contain">
+            <a href="#" class="log-in">Log In</a>
         </div>
-        <!-- <div><img src="../../public/images/bgmain.webp" class="logo" alt="perfil foto" loading="lazy"></div>-->
     </nav>
     <div class="img-container">
         <div class="gradient"></div>
-        <img src="../../public/images/bgmain.webp" alt="">
+        <div class="fondo-img"></div>
+        
         <h1>Bienvenido, Jaime</h1>
         <a>Cerca de ti</a>
     </div>
     <div class="search">
         <div class="search-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" {...props}>
-                <path fill="currentColor" d="M232.49 215.51L185 168a92.12 92.12 0 1 0-17 17l47.53 47.54a12 12 0 0 0 17-17ZM44 112a68 68 0 1 1 68 68a68.07 68.07 0 0 1-68-68" />
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="256"
+                height="256"
+                viewBox="0 0 256 256"
+                {...props}
+            >
+                <path
+                    fill="currentColor"
+                    d="M232.49 215.51L185 168a92.12 92.12 0 1 0-17 17l47.53 47.54a12 12 0 0 0 17-17ZM44 112a68 68 0 1 1 68 68a68.07 68.07 0 0 1-68-68"
+                ></path>
             </svg>
-            <input type="text" placeholder="Buscar eventos, lugares, viajes...">
+            <input
+                type="text"
+                placeholder="Buscar eventos, lugares, viajes..."
+            />
         </div>
     </div>
 </section>

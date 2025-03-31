@@ -1,7 +1,13 @@
 .Categories{
+    width: 100%;
+    max-width: 1351px;
+    margin: 0 auto;
+    overflow-x: hidden;
     height: fit-content;
     padding: 0rem 3rem 0rem 3rem;
 }
+
+
 
 
 .ver_mas{
@@ -13,15 +19,21 @@
     padding: 10px 0px;
     font-size: 25px;
 } 
+.container-categories{
+    overflow-x: auto;
+}
+
+.circle-cat{
+    min-width: 70px;
+}
 
 .container-categories p{
     font-size: 14px;
-    width: 90%;
+    width: 100%;
 }
 
 .filtro_ordenar{
-    width: 30%;
-    
+    width: 200px;
     height: 100px;
 }
 

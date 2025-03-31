@@ -1,10 +1,12 @@
 .social {
     box-sizing: border-box;
-    width: 100%;
+    width: 100%; 
+    max-width: 1351px; 
     height: fit-content;
     padding: 2rem 3rem 5rem 3rem;
     border-radius: 16px;
     margin: 0px auto;
+    overflow-x: hidden; /* Asegura que no haya scroll horizontal */
 }
 
 .container_share{
